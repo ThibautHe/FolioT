@@ -1,9 +1,10 @@
-import { CSSProperties, useState } from "react";
+import { CSSProperties } from "react";
 import { ViewHeightDiv } from "../Components/viewHeightDiv";
 import Fonts from "../CSS_Modules/fonts.module.css";
 import "../Css/home.css";
 import "../Css/about.css";
-import ImageSlider from "../Components/Slider.tsx";
+// import ImageSlider from "../Components/Slider.tsx";
+import { ImgSliderV2 } from "../Components/SliderV2.tsx";
 
 export function Home() {
   const centerStyle: CSSProperties = {
@@ -11,7 +12,6 @@ export function Home() {
     justifyContent: "center",
     alignItems: "center",
   };
-  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -52,7 +52,8 @@ export function Home() {
         <div className="img-div" style={{"--img": "url(https://picsum.photos/id/240/200)",} as CSSProperties}></div>
         <div className="img-div" style={{"--img": "url(https://picsum.photos/id/241/200)",} as CSSProperties}></div>
       </div> */}
-      <ImageSlider></ImageSlider>
+      {/* <ImageSlider></ImageSlider> */}
+      <ImgSliderV2></ImgSliderV2>
       <div style={{ height: "400px" }}></div>
     </>
   );

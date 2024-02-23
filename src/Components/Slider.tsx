@@ -30,7 +30,6 @@ const ImageSlider: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
   const [order, setOrder] = useState(images.map((item) => item.id));
   const inView = useInView(sliderRef);
-  console.log("initial " + order);
 
   const handleClick = (img: { id: number; url: string }) => {
     if (sliderRef.current) {
@@ -41,8 +40,6 @@ const ImageSlider: React.FC = () => {
         slider.appendChild(firstimginlist);
         slider.prepend(imgDiv);
       }
-      const clickedIndex = order.indexOf(img.id);
-      console.log("clicked index" + clickedIndex);
 
       const prevFirst = order[0];
       const newArray = [
@@ -59,21 +56,20 @@ const ImageSlider: React.FC = () => {
   }, [inView]);
 
   const variants = {
-    hidden: (index: number) => {
-      console.log("test" + order);
-      return { y: 100 * (order.indexOf(index)), opacity: 1 };
-    },
+    hidden: (index: number) => (
+      { y: 100 * order.indexOf(index), opacity: 1 }
+    ),
     visible: (index: number) => ({
-      y: -100,
+      y: order.indexOf(index) === 0 ? 0 : -100,
       opacity: 1,
-      transition: { duration: 1 * (order.indexOf(index) + 1) },
+      transition: { duration: 0.2 + order.indexOf(index) * 0.3 },
     }),
   };
 
   return (
     <div className="images-container">
       <div ref={sliderRef} className="slider">
-        {images.map((img, index) => (
+        {images.map((img) => (
           <AnimatePresence>
             <motion.div
               initial="hidden"
@@ -93,7 +89,4 @@ const ImageSlider: React.FC = () => {
   );
 };
 
-const Slide = () => {
-  return <motion.div></motion.div>;
-};
 export default ImageSlider;

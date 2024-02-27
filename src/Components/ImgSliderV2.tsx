@@ -1,5 +1,7 @@
 import { CSSProperties, useState } from "react";
 import "../Css/projects-slider.css";
+import Fonts from "../CSS_Modules/fonts.module.css";
+import {  motion } from "framer-motion";
 
 type imagelist = {
   id: number;
@@ -61,12 +63,24 @@ export function ImgSliderV2() {
   return (
     <>
       <div className="slider-container">
-        <div
+        <motion.div
+          key={mainImgId}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
           className="MainImg"
           style={{ "--img": `url(${mainImgUrl})` } as CSSProperties}
         >
+          <h1
+            className={`${Fonts.big_title} ${Fonts.light_color} project-title`}
+          >
+            Projects
+          </h1>
+          <div className="arrow">
+            <div className="arrow-hat"></div>
+            <div className="arrow-body"></div>
+          </div>
           {/* <img src={mainImgUrl} alt="" /> */}
-        </div>
+        </motion.div>
         <div className="scrolltest">
           <div className="subImages">
             {subImagesOrder.map((imgId) => {
@@ -75,7 +89,8 @@ export function ImgSliderV2() {
               }
               const imgdata = images.find((imgdata) => imgdata.id === imgId);
               return (
-                <div
+                <motion.div
+                  layout
                   className="img"
                   key={imgId}
                   onClick={() => handleOnclick(imgId)}

@@ -1,7 +1,6 @@
 .about {
   position: relative;
   display: flow-root;
-  padding: 25px 0;
   background-color: var(--mid_color);
 }
 
@@ -10,8 +9,7 @@
   width: 50%;
   height: 650px;
   object-fit: cover;
-  margin: 0 25px;
-  border-radius: 25px;
+  margin-left: 5%;
 }
 
 .about h1 {
@@ -22,5 +20,5 @@
 }
 
 .about p {
-  padding-left: 25px;
+  padding: 25px 0 0 25px;
 }

@@ -1,10 +1,12 @@
 import { CSSProperties } from "react";
-import { ViewHeightDiv } from "../Components/viewHeightDiv";
+import { ViewHeightDiv } from "../Components/ui/viewHeightDiv.tsx";
 import Fonts from "../CSS_Modules/fonts.module.css";
 import "../Css/home.css";
 import "../Css/about.css";
 // import ImageSlider from "../Components/Slider.tsx";
-import { ImgSliderV2 } from "../Components/SliderV2.tsx";
+import { ImgSliderV2 } from "../Components/ImgSliderV2.tsx";
+import { Playground } from "../Components/Playground.tsx";
+import Style from "../CSS_Modules/VhDiv.module.css";
 
 export function Home() {
   const centerStyle: CSSProperties = {
@@ -30,7 +32,7 @@ export function Home() {
         </>
       </ViewHeightDiv>
       <div className="about">
-        <img src="https://picsum.photos/id/237/200/300" alt="" />
+        <img src="https://picsum.photos/id/237/1920/1080" alt="" />
         <p className={`${Fonts.light_color}`}>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
           adipisci error, possimus, eos voluptates in corrupti accusamus soluta
@@ -54,7 +56,7 @@ export function Home() {
       </div> */}
       {/* <ImageSlider></ImageSlider> */}
       <ImgSliderV2></ImgSliderV2>
-      <div style={{ height: "400px" }}></div>
+      <Playground></Playground>
     </>
   );
 }

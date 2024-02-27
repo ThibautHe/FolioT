@@ -42,17 +42,20 @@
 .slider-container {
   height: 100dvh;
   position: relative;
-  background-color: red;
   overflow: hidden;
 }
 
 .scrolltest {
   position: absolute;
-  top: 30%;
-  left: 50%;
+  top: 0;
+  left: 70%;
   overflow-x: scroll;
-  width: 600px;
-  background-color: blue;
+  width: 30%;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.scrolltest::-webkit-scrollbar {
+  display: none;
 }
 
 .MainImg {
@@ -70,9 +73,44 @@
 }
 
 .img {
-  width: 200px;
-  height: 300px;
+  width: 150px;
+  height: 250px;
   background-image: var(--img);
   background-position: center;
   background-size: cover;
+  margin: 15px;
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.arrow-body {
+  position: absolute;
+  width: 85px;
+  height: 9px;
+  background-color: white;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.arrow-hat {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-top: 10px solid white;
+  border-left: 10px solid white;
+  transform: translate(0, -50%) rotate(135deg);
+  right: 10%;
+  top: 50%;
+}
+
+.arrow {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  bottom: 15%;
+  right: 10%;
+  cursor: pointer;
 }

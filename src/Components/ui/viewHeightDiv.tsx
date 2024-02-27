@@ -1,5 +1,5 @@
 import { PropsWithChildren } from "react";
-import Style from "../CSS_Modules/VhDiv.module.css";
+import Style from "../../CSS_Modules/VhDiv.module.css";
 
 type props = {
   style: React.CSSProperties;

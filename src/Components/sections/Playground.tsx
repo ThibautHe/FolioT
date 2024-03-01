@@ -1,9 +1,8 @@
-import React, { CSSProperties, useState } from "react";
-import "../CSS_Modules/VhDiv.module.css";
-import "../Css/home.css";
-import "../Css/playground.css";
-import Slider from "./ui/Slider";
-import Fonts from "../CSS_Modules/fonts.module.css";
+import { CSSProperties, useState } from "react";
+import "../../Css/home.css";
+import "../../Css/playground.css";
+import Slider from "../ui/Slider";
+import Fonts from "../../CSS_Modules/fonts.module.css";
 import { motion } from "framer-motion";
 
 export function Playground() {
@@ -17,7 +16,9 @@ export function Playground() {
 
   return (
     <div className="playground-section">
-      <h1 className={`playground-title ${Fonts.big_title}`}>Playground</h1>
+      <h1 className={`playground-title ${Fonts.big_title} ${Fonts.dark_color}`}>
+        Playground
+      </h1>
       <div className="playground-img-container">
         <motion.div
           initial={{ width: "10%", height: "10%" }}

@@ -1,7 +1,7 @@
 import { CSSProperties, useState } from "react";
 import "../Css/projects-slider.css";
 import Fonts from "../CSS_Modules/fonts.module.css";
-import {  motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 type imagelist = {
   id: number;
@@ -45,8 +45,6 @@ export function ImgSliderV2() {
       .filter((item) => item.id !== mainImgId) // Filter out the mainImgId
       .map((item) => item.id)
   );
-
-  console.log(subImagesOrder);
 
   const mainImgUrl: string =
     images.find((imgdata) => imgdata.id === mainImgId)?.url ?? "";

@@ -1,0 +1,52 @@
+.main_title {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.main_title span {
+  line-height: 1;
+}
+
+.paralax-img {
+  position: absolute;
+  object-fit: cover;
+}
+
+.main-paralax {
+  top: 0%;
+  height: 100%;
+}
+.sky {
+  top: 0;
+}
+
+.mountain_01 {
+  left: 20%;
+}
+.mountain_02 {
+  left: -10%;
+  top: 10%;
+}
+.mountain_01,
+.mountain_02 {
+  width: 1222px;
+}
+
+.bambou_01,
+.bambou_02 {
+  height: 100%;
+}
+
+.bambou_03,
+.bambou_04 {
+  height: 100%;
+}
+
+.lala_01 {
+  width: 700px;
+  left: 0;
+}
+
+.lala_02 {
+  top: 0;
+}

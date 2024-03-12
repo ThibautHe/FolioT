@@ -1,0 +1,24 @@
+.about {
+  position: relative;
+  display: flow-root;
+  background-color: var(--mid_color);
+}
+
+.about img {
+  float: right;
+  width: 50%;
+  height: 650px;
+  object-fit: cover;
+  margin-left: 5%;
+}
+
+.about h1 {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  line-height: 80%;
+}
+
+.about p {
+  padding: 25px 0 0 25px;
+}

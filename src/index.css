@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "poppins"; /* Name your font */
+  src: url("https://use.typekit.net/inw6dck.css"); /* URL to your font file */
+  /* You can also specify other font formats here like woff2, woff, ttf, etc. */
+}
+
+:root {
+  --light_color: #c1cad6;
+  --dark_color: #0d3b66;
+  --mid_color: #67839E;
+  /*
+  --light_color: #00607a;
+  --dark_color: #002029;
+  */
+  /*
+  --light_color: #86cb92;
+  --dark_color: #71b48d;
+  */
+  /*
+  --light_color: #b9d8ff;
+  --dark_color: #000a40;
+  */
+  --gradient: linear-gradient(
+    hsla(213, 100%, 86%, 1) 0%,
+    hsla(231, 100%, 13%, 1) 100%
+  );
+}
+
+body {
+  background-color: var(--light_color);
+  font: 400 16px/1.5 "poppins", sans-serif; /* Using 'poppins' as the font family */
+}

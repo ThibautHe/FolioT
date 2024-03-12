@@ -1,0 +1,41 @@
+.playground-slider-container {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 11;
+}
+
+.playground-slider {
+  background-color: #ff00005c;
+  width: 80%;
+  height: 10%;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.playground-slider-progression {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.playground-slider-ball {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: blue;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}

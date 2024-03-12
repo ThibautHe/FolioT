@@ -1,0 +1,77 @@
+.small_title {
+  font-size: 5rem;
+}
+.medium_title {
+  font-size: 8rem;
+}
+.big_title {
+  font-size: 10rem;
+}
+
+.poppins_extra_light {
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins_extra_light_italic {
+  font-family: "poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins_light {
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins_light_italic {
+  font-family: "poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins_regular {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins_regular_italic {
+  font-family: "poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins_regular_bold {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins_regular_bold_italic {
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins_extra_bold {
+  font-family: "poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins_extra_bold_italic {
+  font-family: "poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.light_color {
+  color: var(--light_color);
+}
+
+.dark_color {
+  color: var(--dark_color);
+}

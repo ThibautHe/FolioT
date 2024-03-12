@@ -1,22 +1,49 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
 import "./index.css";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  useParams,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Projects } from "./Pages/projects.tsx";
 import { SingleProject } from "./Pages/SingleProject.tsx";
 import { Home } from "./Pages/Home.tsx";
 
-type ProjectsList = { id: number; projectName: string };
+type ProjectsList = { id: number; projectName: string; projectImg: string };
 
 const projects: ProjectsList[] = [
-  { id: 1, projectName: "folioB" },
-  { id: 2, projectName: "unity" },
-  { id: 3, projectName: "tutorials" },
+  {
+    id: 1,
+    projectName: "folioB",
+    projectImg: "https://picsum.photos/id/237/1920/1080",
+  },
+  {
+    id: 2,
+    projectName: "unity",
+    projectImg: "https://picsum.photos/id/237/1920/1080",
+  },
+  {
+    id: 3,
+    projectName: "tutorials",
+    projectImg: "https://picsum.photos/id/237/1920/1080",
+  },
+  {
+    id: 4,
+    projectName: "4444",
+    projectImg: "https://picsum.photos/id/237/1920/1080",
+  },
+  {
+    id: 5,
+    projectName: "5555",
+    projectImg: "https://picsum.photos/id/237/1920/1080",
+  },
+  {
+    id: 6,
+    projectName: "6666",
+    projectImg: "https://picsum.photos/id/237/1920/1080",
+  },
+  {
+    id: 7,
+    projectName: "7777",
+    projectImg: "https://picsum.photos/id/237/1920/1080",
+  },
 ];
 
 const router = createBrowserRouter([

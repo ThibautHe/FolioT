@@ -2,6 +2,7 @@ import { CSSProperties, useState } from "react";
 import "../Css/projects-slider.css";
 import Fonts from "../CSS_Modules/fonts.module.css";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 type imagelist = {
   id: number;
@@ -73,10 +74,13 @@ export function ImgSliderV2() {
           >
             Projects
           </h1>
-          <div className="arrow">
-            <div className="arrow-hat"></div>
-            <div className="arrow-body"></div>
-          </div>
+
+          <NavLink to={"/projects"}>
+            <div className="arrow">
+              <div className="arrow-hat"></div>
+              <div className="arrow-body"></div>
+            </div>
+          </NavLink>
           {/* <img src={mainImgUrl} alt="" /> */}
         </motion.div>
         <div className="scrolltest">

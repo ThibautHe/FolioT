@@ -1,0 +1,19 @@
+.projects-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  grid-template-columns: repeat(3, 250px);
+}
+
+.projectBox {
+  height: 400px;
+  background-position: calc(50% + 20px) calc(50% + 20px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.projectBox:last-child {
+  grid-column: 1 / span 3; /* This will make the last item span across all three columns */
+  background-color: red;
+}
